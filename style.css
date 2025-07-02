@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    height: 75vh;
+}
+.mian_card{
+    border: 1px solid white;
+    display: flex;
+    justify-content: start;
+    align-items: self-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 150px auto;
+    width: 400px;
+    height: auto;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+}
+.mian_card>hr{
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background: whitesmoke;
+    border: none;
+}
+.mian_card>h1{
+    color: #1e293b;
+    font-size: 30px;
+}
+.mian_card>h2,.weather,.humidity,.wind{
+    color: #475569;
+    font-size: 30px;
+}
+@media only screen and (max-width: 320px)
+{
+    .mian_card{
+        width: 250px;
+    }
+    .mian_card>h1{
+        font-size: 25px;
+    }
+    .mian_card>h2,.weather,.humidity,.wind{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 376px)
+{
+    .mian_card{
+        width: 300px;
+    }
+    .mian_card>h1{
+        font-size: 28px;
+    }
+    .mian_card>h2,.weather,.humidity,.wind{
+        font-size: 18px;
+    }
+}
